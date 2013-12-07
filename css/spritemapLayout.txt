@@ -1,0 +1,35 @@
+{ width: 64px; height: 62px; background-position: -0px -0px; } left white
+{ width: 66px; height: 62px; background-position: -63.5px -0px; } up white
+{ width: 60px; height: 62px; background-position: -129.5px -0px; } email white
+{ width: 64px; height: 62px; background-position: -189.5px -0px; } next white
+{ width: 61px; height: 62px; background-position: -253.5px -0px; } previous white
+{ width: 68px; height: 62px; background-position: -314.5px -0px; } search white
+{ width: 57px; height: 62px; background-position: -382.5px -0px; } about white
+{ width: 77px; height: 62px; background-position: -439.5px -0px; } manikoth
+{ width: 57px; height: 62px; background-position: -516.5px -0px; } fb
+{ width: 64px; height: 65px; background-position: -0px -62px; } left blk
+{ width: 66px; height: 65px; background-position: -63.5px -62px; } up blk
+{ width: 60px; height: 65px; background-position: -129.5px -62px; } email blk
+{ width: 64px; height: 65px; background-position: -189.5px -62px; } next blk
+{ width: 61px; height: 65px; background-position: -253.5px -62px; } previous blk
+{ width: 68px; height: 65px; background-position: -314.5px -62px; } search blk
+{ width: 57px; height: 65px; background-position: -382.5px -62px; } about blk
+{ width: 77px; height: 65px; background-position: -439.5px -62px; } github
+{ width: 57px; height: 65px; background-position: -516.5px -62px; } twitter
+{ width: 64px; height: 65px; background-position: -0px -127px; } right white
+{ width: 66px; height: 65px; background-position: -63.5px -127px; } down white
+{ width: 60px; height: 65px; background-position: -129.5px -127px; } link white
+{ width: 64px; height: 65px; background-position: -189.5px -127px; } pages white
+{ width: 61px; height: 65px; background-position: -253.5px -127px; } pencil white
+{ width: 68px; height: 65px; background-position: -314.5px -127px; } comment white
+{ width: 57px; height: 65px; background-position: -382.5px -127px; } blank
+{ width: 77px; height: 65px; background-position: -439.5px -127px; } mike
+{ width: 57px; height: 65px; background-position: -516.5px -127px; } gplus
+{ width: 64px; height: 56px; background-position: -0px -192px; } right blk
+{ width: 66px; height: 56px; background-position: -63.5px -192px; } down blk
+{ width: 60px; height: 56px; background-position: -129.5px -192px; } link blk
+{ width: 64px; height: 56px; background-position: -189.5px -192px; } pages blk
+{ width: 61px; height: 56px; background-position: -253.5px -192px; } pencil blk
+{ width: 68px; height: 56px; background-position: -314.5px -192px; } comment blk
+{ width: 57px; height: 56px; background-position: -382.5px -192px; } blank
+{ width: 77px; height: 56px; background-position: -439.5px -192px; } codepen

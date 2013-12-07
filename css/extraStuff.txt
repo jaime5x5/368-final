@@ -1,0 +1,139 @@
+extra stuff
+/*==============================
+	Students Page
+==============================*/
+.members li {
+	float: left;
+	list-style: none;
+	margin: 20px 0 0 20px;
+	position: relative;
+	width: 440px;
+}
+
+/* Create Ribbons */
+.members h3 {
+    background: #666;
+	bottom: 20px;    
+    color: #fff;
+    font-family: "pragmatica-web-condensed", arial, sans-serif;
+    padding: 10px;
+	position: absolute;
+    	
+	/* CSS 3*/
+	box-shadow: 0 10px 20px #222;
+}
+
+/* Alternate Ribbons Left/Right */
+.members li:nth-child(odd) h3 {	
+	left: -20px;
+}
+
+.members li:nth-child(even) h3 {
+	right: 0px;
+}
+
+/* Create Ribbon Triangle */
+.members h3:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	bottom: -40px;
+	border-width: 20px;
+	z-index: -1;
+}
+
+/* Alternate Ribbons Left/Right */
+.members li:nth-child(odd) h3:after {	
+	left: 0;
+}
+
+.members li:nth-child(even) h3:after {
+	right: 0px;
+}
+
+.members img {
+	width: 420px;
+}
+
+/*==============================
+	index Page
+==============================*/
+
+.title {
+	font-size: 2em;
+	margin-left: 3%;
+}
+
+.contents {
+	background-color: green;
+	float: left;
+	margin-left: 3%;
+	margin-top: 3%;
+	width: 45%;	
+}
+
+.introText {
+	background-color: blue;
+	margin: 3% 3%;
+	float: left;
+	width:45%;
+}
+
+.moreContents {
+	background-color: aqua;
+	clear:left;
+	/* float: left; */
+	width:45%;
+	margin: 3% 3%;
+}
+
+/*==============================
+	Gallery Theme - Customize
+==============================*/
+
+.gallery .control-button {
+  color: #00ccff;
+  color: rgba(0, 204, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+   color: #00ccff;
+  color: rgba(0, 204, 255, 1);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+}
+.gallery .item {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background: #4d87e2;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+/*moreContents*/
+.moreContents {
+	background-color: aqua;
+	clear:left; 
+	margin: 3% 3%;
+	width:45%;
+	
+}
