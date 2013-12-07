@@ -192,7 +192,7 @@ nav a:active {
 ==============================*/
 /* About Link Off State*/
 nav ul li:nth-child(1) a:link {
-    background: url("../img/spritemap.png") no-repeat;
+    background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
 	height: 64px; 
@@ -202,7 +202,7 @@ nav ul li:nth-child(1) a:link {
 }
 
 nav ul li:nth-child(1) a:hover {
-    background: url("../img/spritemap.png") no-repeat;
+    background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
 	
@@ -213,7 +213,7 @@ nav ul li:nth-child(1) a:hover {
 
 /* Contact Link */
 nav ul li:nth-child(2) a:link {
-    background: url("../img/spritemap.png") no-repeat 0;
+    background: url("../img/spriteMap.png") no-repeat 0;
 	
     width: 64px; 
 	height: 64px; 
@@ -221,7 +221,7 @@ nav ul li:nth-child(2) a:link {
 }
 
 nav ul li:nth-child(2) a:hover {
-    background: url("../img/spritemap.png") no-repeat;
+    background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px;
 	background-position: -120px -64px;
@@ -229,7 +229,7 @@ nav ul li:nth-child(2) a:hover {
 
 /* Search Link */
 nav ul li:nth-child(3) a:link {
-    background: url("../img/spritemap.png") no-repeat;
+    background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
 	
@@ -238,7 +238,7 @@ nav ul li:nth-child(3) a:link {
 }
 
 nav ul li:nth-child(3) a:hover {
-    background: url("../img/spritemap.png") no-repeat;
+    background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px; 
 	background-position: -314.5px -62px;
