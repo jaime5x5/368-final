@@ -12,8 +12,7 @@
 	<link rel="stylesheet" href="css/gallery.css" />	
 	<link rel="stylesheet" href="css/styles.css" />
 	
-	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	
 </head>
 <body class="home">
@@ -42,39 +41,85 @@
 				<p>Major: Computer Information Systems</p>
 				<p>Minor: Visual Communications Design</p>
 			</div>
-			<div class="gallery items-4">
-              <div id="item-1" class="control-operator"></div>
-              <div id="item-2" class="control-operator"></div>
-              <div id="item-3" class="control-operator"></div>
-              <div id="item-4" class="control-operator"></div>
-            
-              <figure class="item">
-                <h1>1</h1>
-                <img src="img/goProShot.jpg" />
-              </figure>
-            
-              <figure class="item">
-                <h1>2</h1>
-                <img src="img/busStop.jpg" />
-              </figure>
-            
-              <figure class="item">
-                <h1>3</h1>
-                <img src="img/fullHouse.jpg" />
-              </figure>
-              
-              <figure class="item">
-                <h1>4</h1>
-                <img src="img/artGecko.jpg" />
-              </figure>
-            
-              <div class="controls">
-                <a href="#item-1" class="control-button">•</a>
-                <a href="#item-2" class="control-button">•</a>
-                <a href="#item-3" class="control-button">•</a>
-                <a href="#item-4" class="control-button">•</a>
-              </div>
-            </div>
+			<ul class="slides">
+			    <input type="radio" name="radio-btn" id="img-1" checked />
+			    <li class="slide-container">
+					<div class="slide">
+						<img src="img/redFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-2" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="img/greenFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-3" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="img/blueFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-4" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="img/rgbFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-5" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="img/artGecko640.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-4" class="prev">&#x2039;</label>
+						<label for="img-6" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-6" />
+			    <li class="slide-container">
+			        <div class="slide">
+			          <img src="img/longCat640.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-5" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <li class="nav-dots">
+			      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+			      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+			      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+			      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+			      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+			    </li>
+			</ul>
+			<div id="featured-video">
+        		<iframe src="https://www.youtube.com/watch?v=Wao5bNqiWx8"  width="425" height="349" frameborder="0"></iframe>
+	      	</div>
 	    </article><!-- end article -->		
 		<footer class="grid-6">
 			<div class="helpful grid-4">
@@ -93,7 +138,15 @@
 				</ul>
 			</div>
 		</footer>
-    </div><!-- end .container -->	
+    </div><!-- end .container -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="external/matchmedia.js"></script>
+	<script src="picturefill.js"></script>
+	<script src="jquery.fitvids.js"></script>
+	<script>
+		$("#featured-video").fitVids();
+	</script>
 
 </body>
 </html>
