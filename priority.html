@@ -32,8 +32,8 @@
 		</header>
     	
     	<article class="grid-6">
-			<div class="title grid-6">
-				<h1>Syntax</h1>
+			<div class="title grid-6 synPriority">
+				<h1>Syntax Priority</h1>
 			</div>
 			<div class="contents grid-6">
 				<ul>
@@ -55,7 +55,62 @@
 				</div>
 			</aside>
 			<div class="introText grid-4">
-				<p>a style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.</p>
+				<table class="grid-6">
+				  <thead>
+				    <tr>
+				      <th>High Priority</th>
+				      <th>CSS Source Type</th>
+				      <th>Description</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><strong>1</strong></td>
+				      <td>User defined</td>
+				      <td>Most browsers have the accessibility feature: a user defined CSSl</td>
+				    </tr>
+				    <tr>
+				      <td><strong>2</strong></td>
+				      <td>Inline</td>
+				      <td>A style applied to an HTML element via HTML style property</td>
+				    </tr>
+				    <tr>
+				      <td><strong>3</strong></td>
+				      <td>Media Type</td>
+				      <td>A property definition applies to all media types, unless a media specific CSS defined</td>
+				    </tr>
+				    <tr>
+				      <td><strong>4</strong></td>
+				      <td>Importance</td>
+				      <td>The !important value overwrites the previous priority types.</td>
+				    </tr>					
+				    <tr>
+				      <td><strong>5</strong></td>
+				      <td>'auto'</td>
+				      <td>A specific contextual selector (#heading p) overwrites generic definition.</td>
+				    </tr>
+				    <tr>
+				      <td><strong>6</strong></td>
+				      <td>Rule order</td>
+				      <td>Last rule declaration has a higher priority.</td>
+				    </tr>
+				    <tr>
+				      <td><strong>7</strong></td>
+				      <td>Parent inheritance</td>
+				      <td>If a property is not specified, it will be inherited from a parent element.</td>
+				    </tr>
+				    <tr>
+				      <td><strong>8</strong></td>
+				      <td>CSS property definition in HTML document</td>
+				      <td>CSS rule or CSS inline style overwrites a default browser value.</td>
+				    </tr>
+				    <tr>
+				      <td><strong>9</strong></td>
+				      <td>Browser default</td>
+				      <td>The lowest priority: browser default value is determined by W3C initial value specifications.</td>
+				    </tr>
+				  </tbody>
+				</table>
 			</div>
 
 	    </article><!-- end article -->		
