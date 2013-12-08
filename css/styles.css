@@ -358,8 +358,10 @@ nav ul li:nth-child(3) a:hover {
 	background-attachment: fixed;
 }*/
 
-#featured-video {
+.myvid1 {
 	float: left;
+	width:60%;
+	margin-left: 5%;
 }
 /*==============================
 	Gallery Theme - Customize
@@ -372,6 +374,7 @@ nav ul li:nth-child(3) a:hover {
     height: 420px;
     display: block;
     
+	margin-left: 3%;
 	/* margin: 0 auto; */
     
 	position: relative;

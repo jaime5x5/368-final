@@ -138,5 +138,84 @@ extra stuff
 	
 }
 
+51, 102, 102, 0.9
+
+			<div class="gallery items-4">
+              <div id="item-1" class="control-operator"></div>
+              <div id="item-2" class="control-operator"></div>
+              <div id="item-3" class="control-operator"></div>
+              <div id="item-4" class="control-operator"></div>
+            
+              <figure class="item">
+                <h1>1</h1>
+                <img src="img/greenFw.jpg" />
+              </figure>
+            
+              <figure class="item">
+                <h1>2</h1>
+                <img src="img/redFW.jpg" />
+              </figure>
+            
+              <figure class="item">
+                <h1>3</h1>
+                <img src="img/blueFW.jpg" />
+              </figure>
+              
+              <figure class="item">
+                <h1>4</h1>
+                <img src="img/rgbFW.jpg" />
+              </figure>
+            
+              <div class="controls">
+                <a href="#item-1" class="control-button">•</a>
+                <a href="#item-2" class="control-button">•</a>
+                <a href="#item-3" class="control-button">•</a>
+                <a href="#item-4" class="control-button">•</a>
+              </div>
+            </div>
+            /*==============================
+	Gallery Theme - Customize
+==============================*/
+
+.gallery .control-button {
+  color: #00ccff;
+  color: rgba(0, 204, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+   color: #00ccff;
+  color: rgba(0, 204, 255, 1);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+	float: left;
+  position: relative;
+	margin-bottom: 5%;
+}
+.gallery .item {
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(51,102,102,0.6);
+  margin-bottom: 5%;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
 	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
