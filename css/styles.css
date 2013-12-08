@@ -358,7 +358,9 @@ nav ul li:nth-child(3) a:hover {
 	background-attachment: fixed;
 }*/
 
-
+#featured-video {
+	float: left;
+}
 /*==============================
 	Gallery Theme - Customize
 ==============================*/
