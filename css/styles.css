@@ -69,6 +69,7 @@ canvas {
 }
 h1 {
 	font-weight: bold;
+	font-family: "pragmatica-web-condensed";
 	margin: .5em 0;
 }
 p {
