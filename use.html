@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="css/gallery.css" />	
 	<link rel="stylesheet" href="css/styles.css" />
 	
-
+	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 </head>
 <body class="home">
@@ -37,25 +38,32 @@
 			</div>
 			<div class="contents grid-6">
 				<ul>
-				  <li class="grid-1"><a href="introduction.html">Introduction</a></li>
-				  <li class="grid-1"><a href="syntax.html">Syntax</a></li>
-				  <li class="grid-1"><a href="history.html">History</a></li>
-				  <li class="grid-2"><a href="browserSupport.html">Browser Support</a></li>
+				  <a href="introduction.html" class="grid-1"><li>Introduction</li></a>
+				  <a href="syntax.html" class="grid-1"><li>Syntax</li></a>
+				  <a href="history.html" class="grid-1"><li>History</li></a>
+				  <a href="browserSupport.html" class="grid-2"><li>Browser Support</li></a>
 				</ul>
 			</div>
     			<aside>
 				<div class="syntaxSubMenu">
 					<ul>
-						<li class="grid-6"><a href="selector.html">Selector</a></li>
-						<li class="grid-6"><a href="declarationBlock.html">Declaration Block</a></li>
-						<li class="grid-6"><a href="use.html">Use</a></li>
-						<li class="grid-6"><a href="sources.html">Sources</a></li>
-						<li class="grid-6"><a href="priority.html">Priority</a></li>
+						<a href="selector.html" class="grid-6"><li>Selector</li></a>
+						<a href="declarationBlock.html" class="grid-6"><li>Declaration Block</li></a>
+						<a href="use.html" class="grid-6"><li>Use</li></a>
+						<a href="sources.html" class="grid-6"><li>Sources</li></a>
+						<a href="priority.html" class="grid-6"><li>Priority</li></a>
 					</ul>
 				</div>
 			</aside>
-			<div class="introText grid-4">
-				<p>a style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.</p>
+			<div class="useText-col-1">
+				<p> Prior to CSS, nearly all of the presentational attributes of HTML documents were contained within the HTML markup; all font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS allows authors to move much of that information to another file, the style sheet, resulting in considerably simpler HTML. Headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements 
+				is presentational.</p>
+			</div>
+			<div class="useImage">
+				<img src="img/Capture.png" alt="html code">
+			</div>
+			<div class="useText-col-2">
+				<p>Prior to CSS, document authors who wanted to assign such typographic characteristics to, say, all h2 headings had to repeat HTML presentational markup for each occurrence of that heading type. This made documents more complex, larger, and more difficult to maintain. CSS allows the separation of presentation from structure. CSS can define color, font, text alignment, size, borders, spacing, layout and many other typographic characteristics, and can do so independently for on-screen and printed views. CSS also defines non-visual styles such as the speed and emphasis with which text is read out by aural text readers. The W3C has now deprecated the use of all presentational HTML markup.</p>
 			</div>
 
 	    </article><!-- end article -->		

@@ -37,6 +37,9 @@ video,
 canvas {
   max-width: 100%;
 }
+ a {
+ 	text-decoration: none;
+ }
 
 /* Grid > 6 Column Mobile First
 -------------------------------------------------------------- */
@@ -308,29 +311,23 @@ nav ul li:nth-child(3) a:hover {
 	font-size: 1.5em;
 }
 /*==============================
-	index Page
+	Introduction Page
 ==============================*/
 .introText-col-1 {
 	/* background-color: blue; */
-	width: 25%;
+	width: 38%;
 	float: left;
 	margin: 0 3%; 
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 .introText-col-2 {
 	/* background-color: blue; */
-	width: 25%;
+	width: 38%;
 	float: left;
 	margin: 0 3%;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
-.introText-col-3 {
-	/* background-color: blue; */
-	width: 25%;
-	float: left;
-	margin: 0 3%;
-	font-size: 1.1em;
-}
+
 /*==============================
 	About Page
 ==============================*/
@@ -442,13 +439,14 @@ aside .syntaxSubMenu {
 	clear:both;
 	margin-right: 5%;
 	margin-bottom: 2%;
-	background-color: darkkhaki;
-	padding: 1.1%;
+	/*background-color: darkkhaki;*/
+	padding: 7% 1%;
 	text-align: center;
-	border-radius: 10px;
+
+	/*border-radius: 10px;*/
 	box-shadow: inset 0px 0px 10px 2px #888;
 }
-.syntaxSubMenu ul li a {
+.syntaxSubMenu ul a li {
 	text-decoration: none;
 }
 
@@ -456,6 +454,10 @@ aside .syntaxSubMenu {
 .syntaxSubMenu a:active {
     color: #00ccff;
 	margin-top: 10px;
+}
+.syntaxSubMenu ul li:nth-child(1) a:link {
+    background: url("../img/2.1.png") no-repeat;
+	  
 }
 /*==============================
 	Syntax Priority Page
@@ -579,6 +581,42 @@ tbody:hover td {
 tbody:hover tr:hover td {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
+}
+/*==============================
+	Syntax Selector Page
+==============================*/
+.selectorText-col-1 {
+	font-size: 1.5em;
+	float: left;
+	width:37%;
+	margin-left: 3%;
+}
+.selectorText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width:37%;
+	margin-left: 3%;
+}
+/*==============================
+	Syntax Use Page
+==============================*/
+.useText-col-1 {
+	font-size: 1.5em;
+	float: left;
+	width:60%;
+	margin-left: 3%;
+}
+.useText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width:33.3333%;
+	margin-left: 3%;
+}
+.useImage {
+	float: left;
+	width:40%;
+	margin-left: 3%;
+	margin-top: 3%;
 }
 /*==============================
 	browserSupport Page
