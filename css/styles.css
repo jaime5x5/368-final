@@ -41,12 +41,10 @@ canvas {
  	text-decoration: none;
  }
 
-/* Grid > 6 Column Mobile First
--------------------------------------------------------------- */
+/* Grid > 6 Column Mobile First */
 .container {
   /*
-    The `max-width` property is the width governer. I dare you to experiment
-    with setting this larger, something like 1280px.
+    The `max-width` property is the width governer.
   */
 	max-width: 1280px;
 	width:92%;
@@ -352,15 +350,6 @@ nav ul li:nth-child(3) a:hover {
 	margin-left: 3%;
 	font-size: 1.5em;
 }
-
-/*.container {
-	overflow-y: auto;
-  	background-image: url("../img/infernoEagle.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}*/
-
 .myvid1 {
 	float: left;
 	width:60%;
@@ -491,8 +480,6 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(255, 153, 102, 0.9);
 }
-
-
 
 /*==============================
 	Contact Page
@@ -708,6 +695,106 @@ aside .syntaxSubMenu {
     background: url("../img/2.1.png") no-repeat;
 	  
 }
+
+.syntax h1 {
+	
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.5em;	
+	height: 3em;
+	text-align: -webkit-left;
+	padding-top: 9%;
+	padding-left: 35%;
+}
+/*==============================
+	Syntax Selector Page
+==============================*/
+.synSelector h1 {
+	
+	background-image: url(../img/2.1.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.5em;	
+	height: 3em;
+	text-align: -webkit-center;
+	padding-top: 9%;
+	padding-left: 35%;
+}
+/*==============================
+	Syntax Declaration Block Page
+==============================*/
+.synDecBlock h1 {
+	
+	background-image: url(../img/2.2.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.5em;	
+	height: 3em;
+	text-align: -webkit-center;
+	padding-top: 9%;
+	padding-left: 35%;
+}
+.decBlock {
+	font-size: 1.5em;
+	float: left;
+	margin-left: 3%;
+	width: 50%;
+}
+/*==============================
+	Syntax Use Page
+==============================*/
+.synUse h1 {
+	
+	background-image: url(../img/2.3.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.5em;	
+	height: 3em;
+	text-align: -webkit-center;
+	padding-top: 9%;
+	padding-left: 35%;
+}
+/*==============================
+	Syntax Sources Page
+==============================*/
+.synSources h1 {
+	
+	background-image: url(../img/2.4.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.5em;	
+	height: 3em;
+	text-align: -webkit-center;
+	padding-top: 9%;
+	padding-left: 35%;
+}
+
 /*==============================
 	Syntax Priority Page
 ==============================*/
@@ -991,6 +1078,7 @@ footer a:active {
 	height: 65px; 
 	background-position: -516.5px -127px;
 }
+
 /*==============================
 	small screenSize
 ==============================*/
