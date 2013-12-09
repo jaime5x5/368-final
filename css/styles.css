@@ -540,47 +540,48 @@ label {
 }
 
 #text-feedback{
-	width: 80%;
+	background-color:white;
 	padding-left: 10%;
 	padding-right: 10%;
-	background-color:white;
 	text-align:center;
+	width: 80%;
 }
 
 #form-main{
-	width:100%;
 	float:left;
 	padding-top:2%;
+	width:100%;
 }
 
 #form-div {
 	background-color: rgba(51,102,102,0.8);
+	float: left;
+	margin-left: 25%;
+	margin-bottom: 2%;
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	float: left;
-	margin-left: 25%;
-	margin-bottom: 2%;
 }
 
 .feedback-input {
-	opacity:0.9;
-	color:#0493bd;
+	box-sizing: border-box;
+	border-radius: 0;
+	background-color: #fbfbfb;
+  	border: 3px solid #fbfbfb;
+	color:#0493bd;	
 	font-family: 'droid-sans', Helvetica, Arial, sans-serif;
   	font-weight:400;
 	font-size: 18px;
-	border-radius: 0;
 	line-height: 22px;
-	background-color: #fbfbfb;
-  	border: 3px solid #fbfbfb;
-	padding: 13px 13px 13px 54px;
 	margin-bottom: 10px;
 	/* width:100%; */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+	opacity:0.9;
+	padding: 13px 13px 13px 54px;
+
 }
 
 .feedback-input:focus{
@@ -589,7 +590,7 @@ label {
 	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
-  padding: 13px 13px 13px 54px;
+  	padding: 13px 13px 13px 54px;
 }
 
 .focused{
@@ -645,19 +646,19 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
+	background-color: rgba(204, 51, 0, 0.7);
+	border: #fbfbfb solid 4px;
+	color:white;
+	cursor:pointer;
 	font-family: 'droid-sans', Helvetica, Arial,  sans-serif;
 	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: rgba(204, 51, 0, 0.7);
-	color:white;
 	font-size:24px;
 	padding-top:22px;
 	padding-bottom:22px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	width: 100%;
 }
 
 #button-blue:hover{
@@ -683,8 +684,9 @@ input:focus, textarea:focus {
 }
 
 .submit:hover .ease{
+  background-color:white;  
   width:100%;
-  background-color:white;
+
 }
 
 /*==============================
@@ -698,21 +700,21 @@ aside .syntaxSubMenu {
 	list-style: none;
 }
 .syntaxSubMenu ul {
+	background-size: 100%;	
 	font-weight: bold;
 	font-size: 1.2em;
 	list-style-type: none;
-	background-size: 100%;
+
 }
 .syntaxSubMenu ul li {
+	background-color: rgba(153, 153, 102, 0.7);
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 10px 2px #888;	
 	clear:both;
 	margin-right: 5%;
 	margin-bottom: 10%;
-	background-color: rgba(153, 153, 102, 0.7);
 	padding: 8% 1%;
 	text-align: center;
-
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 10px 2px #888;
 }
 .syntaxSubMenu ul a li {
 	text-decoration: none;
@@ -723,10 +725,7 @@ aside .syntaxSubMenu {
     color: white;
 	margin-top: 10px;
 }
-.syntaxSubMenu ul li:nth-child(1) a:link {
-    background: url("../img/2.1.png") no-repeat;
-	  
-}
+
 
 .syntax h1 {
 	
@@ -763,6 +762,19 @@ aside .syntaxSubMenu {
 	padding-top: 6.5%;
 	padding-left: 35%;
 }
+.selectorText-col-1 {
+	font-size: 1.5em;
+	float: left;
+	width:37%;
+	margin-left: 3%;
+}
+.selectorText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width:37%;
+	margin-left: 3%;
+}
+
 /*==============================
 	Syntax Declaration Block Page
 ==============================*/
@@ -806,6 +818,24 @@ aside .syntaxSubMenu {
 	text-align: -webkit-center;
 	padding-top: 6.5%;
 	padding-left: 35%;
+}
+.useText-col-1 {
+	font-size: 1.5em;
+	float: left;
+	width: 65%;
+	margin-left: 3%;
+}
+.useText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width:33.3333%;
+	margin-left: 3%;
+}
+.useImage {
+	float: left;
+	width: 39%;
+	margin-left: 3%;
+	margin-top: 3%;
 }
 /*==============================
 	Syntax Sources Page
@@ -950,42 +980,47 @@ tbody:hover tr:hover td {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
 }
+
 /*==============================
-	Syntax Selector Page
+	history Page
 ==============================*/
-.selectorText-col-1 {
-	font-size: 1.5em;
-	float: left;
-	width:37%;
-	margin-left: 3%;
+aside .historySubMenu {
+	clear: both;
+	float:left;	
 }
-.selectorText-col-2 {
-	font-size: 1.5em;
-	float: left;
-	width:37%;
-	margin-left: 3%;
+.historySubMenu ul {
+	background-size: 100%;	
+	font-weight: bold;
+	font-size: 1.2em;
+	list-style-type: none;
+	
 }
+.historySubMenu ul li {
+	background-color: rgba(153, 153, 102, 0.7);	
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 10px 2px #888;
+	margin-bottom: 10%;
+	padding: 11% 25%;
+	text-align: center;
+}
+.historySubMenu ul a li {
+	text-decoration: none;
+}
+
+.historySubMenu a:hover, 
+.historySubMenu a:active {
+    color: white;
+	margin-top: 10px;
+}
+
 /*==============================
-	Syntax Use Page
+	historyEarly Page
 ==============================*/
-.useText-col-1 {
-	font-size: 1.5em;
-	float: left;
-	width: 65%;
-	margin-left: 3%;
-}
-.useText-col-2 {
-	font-size: 1.5em;
-	float: left;
-	width:33.3333%;
-	margin-left: 3%;
-}
-.useImage {
-	float: left;
-	width: 39%;
-	margin-left: 3%;
-	margin-top: 3%;
-}
+
+/*==============================
+	historyVariations Page
+==============================*/
+
 /*==============================
 	browserSupport Page
 ==============================*/
