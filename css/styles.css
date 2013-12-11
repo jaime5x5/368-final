@@ -669,10 +669,10 @@ input:focus, textarea:focus {
 
 .syntaxSubMenu a:hover, 
 .syntaxSubMenu a:active {
-    color: white;
-    background-color: rgba(153, 153, 102, 0.7);  
+    color: black;
+    background-color: rgba(255, 204, 153, 1);  
     border-radius: 5px;  
-    box-shadow: inset 0px 0px 10px 2px #888;  
+    box-shadow: inset 0px 0px 10px 2px #eee;  
     padding: 5px px 0 px;  
     padding-left: 20px;
 }
