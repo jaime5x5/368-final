@@ -391,7 +391,8 @@ nav ul li:nth-child(3) a:hover {
     position: absolute;
 	margin-left: 0px;
 	transform: scale(0);
-    transition: all .7s ease-in-out;
+	z-index: 1;
+	transition: all .7s ease-in-out;
 }
 
 .slide img {
@@ -402,10 +403,10 @@ nav ul li:nth-child(3) a:hover {
 .nav label {
     width: 15%;
     height: 100%;
-    display: none;
+    /* display: none; */
     position: absolute;
 	opacity: 0;
-    z-index: 9;
+    z-index: 0;
     cursor: pointer;
     transition: opacity .2s;
     color: #FFF;
@@ -445,6 +446,7 @@ input:checked + .slide-container .nav label { display: block; }
 	background-color: rgba(153, 153, 102, 0.69);
 	border-radius: 25px;
 	margin-left: 36%;
+	z-index: 2;
 }
 
 .nav-dots .nav-dot {
