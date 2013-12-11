@@ -11,24 +11,9 @@
 
 --------------------------------------------------------------*/
 
-/* Responsive Resets
--------------------------------------------------------------- */
-@-o-viewport {
-  width: device-width;
-}
-@-ms-viewport {
-  width: device-width;
-}
-@viewport {
-  width: device-width;
-}
-
-html {
+.home {
 	overflow-y: auto;
   	background-image: url("../img/paper_1.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 img,
@@ -36,16 +21,14 @@ audio,
 canvas {
   max-width: 100%;
 }
- a {
+ logo a {
+ 	display: inline-block;
  	color: #c30;
  	text-decoration: none;
  }
 
 /* Grid > 6 Column Mobile First */
 .container {
-  /*
-    The `max-width` property is the width governer.
-  */
 	max-width: 1280px;
 	width:92%;
 	margin:0px auto;
@@ -73,7 +56,7 @@ h1 {
 p {
     font-family: "garamond-premier-pro-caption";
 	
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 .logo {
@@ -93,28 +76,18 @@ p {
 /*==============================
 	Structure & Layout 
 ==============================*/
-
-
-/* Push down content below navigation */
-article {
+aside {
 	clear: left;
-	/* background-color: red; */	
-	margin-bottom: 3%;
-	padding-bottom: 2%;
+	float: left;
 }
 footer {
-	background-color: rgba(51,102,102,0.5);
-	border-radius: 10px 10px 20px 20px;
-	box-shadow: inset 0px 0px 10px 2px #666;
 
 }
 .social {
 	float: left;
-	/*background-color: #c30;*/
 }
 .helpful {
 	float: left;
-	/*background-color: #996;*/
 }
 
 /*==============================
@@ -122,8 +95,8 @@ footer {
 ==============================*/
 
 .logo {
- margin-top: 2%;
- margin-left: 1.5%;
+ overflow: hidden;
+ margin: 2%;
 }
 
 header  a:hover {
@@ -156,22 +129,17 @@ nav li:nth-child(1) {
 
 nav {
 	float:right;
-	background-color: rgba(51,102,102,0.5);	
-	border-radius: 20px 20px 10px 10px;
     height: 64px;
 	position: absolute;
 	left: 0;
 	top: 18%;
 	margin-left: 30%;
 	width: 50%;
-	
-	/* CSS3 */
-	box-shadow: inset 0px 0px 10px 2px #666;
 }
 
 header nav a:link,
 header nav a:visited {
-	color: #fff;
+	color: #555;
     display: block;
     font-family: "droid-sans";
 	height: 32px;
@@ -180,10 +148,6 @@ header nav a:visited {
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 32px; 
-	 
-	/* padding-left: 30%; */
-	
-	/*CSS 3*/
 	transition: all .5s;
 	width: 10%;
 }
@@ -204,7 +168,7 @@ nav ul li:nth-child(1) a:link {
     width: 64px; 
 	height: 64px; 
 	
-    background-position: -382.5px -0px; 
+    background-position: -378.5px 4px; 
 	  
 }
 
@@ -215,40 +179,45 @@ nav ul li:nth-child(1) a:hover {
 	
     height: 64px; 
 	
-    background-position: -382.5px -64px; 
+    background-position: -378.5px -60px; 
 }
 
 /* Contact Link */
-nav ul li:nth-child(2) a:link {
+	nav ul li:nth-child(2) a:link {
     background: url("../img/spriteMap.png") no-repeat 0;
 	
     width: 64px; 
 	height: 64px; 
-	background-position: -120px -0px;
+	
+    background-position: -120px 5px;
 }
 
 nav ul li:nth-child(2) a:hover {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px;
-	background-position: -120px -64px;
+	
+    background-position: -120px -60px;
 }
 
 /* Search Link */
 nav ul li:nth-child(3) a:link {
+    background-color: rgba(51, 102, 102, 0.09);
     background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
 	
     height: 64px; 
-	background-position: -314.5px -0px;
+	
+    background-position: -315.5px 6px;
 }
 
 nav ul li:nth-child(3) a:hover {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px; 
-	background-position: -314.5px -62px;
+	
+    background-position: -315.5px -60px;
 }
 
 /*==============================
@@ -259,93 +228,66 @@ nav ul li:nth-child(3) a:hover {
 .search ul li:nth-child(3){
 	background: rgba(255,255,255,.15);
 }
+
 /*==============================
 	index Page
 ==============================*/
 /*title*/
 .title {
+	float: left;
+	display: block;
 	font-size: 2em;
 	margin-left: 3%;
-	margin-bottom: %;
 }
 /*contents menu*/
 .contents {
-    /* background-color: #ACAC1C; */
+    float: left;
+    display: block;
 }
 .contents ul {
-	color: black;
+	clear: left;
+	display: block;
 	font-weight: bold;
 	font-size: 1.2em;
 	list-style-type: none;
+	background-color: blue;
 	background-color: coral;
 	background-size: 100%;
+	background-color: aqua;
 }
 .contents ul li {
-	/* color: black; */
 	float:left;
 	font-family:"droid-sans";
-	margin-right: 2%;
 	margin-bottom: 2%;
-	background-color: rgba(51, 102, 102, 0.7);
-	padding: 1.1%;
 	text-align: center;
-	width: 18%;
-	/* box-sizing: content-box; */
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 10px 2px #888;
 }
 .contents ul li a {
+	color: #555;
 	text-decoration: none;
+	padding: 5px 20px 5px 20px;
 }
 
-.contents a:hover, 
-.contents a:active {
+.contents ul a:hover, 
+.contents ul a:active {
     color: white;
 	margin-top: 10px;
+	
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: #555;  
+    box-shadow: inset 0px 0px 1px 1px #DDD;
 }
+
 /*intro*/
 
 .introText {
-	/* background-color: blue; */
-	float: left;
-	margin: 3% 3%;
-	/* width:45%; */
+	/* clear: left; */
+	margin: 3%;
 	font-size: 1.5em;
+	float: left;
+	width: 40%;
 }
 .index h1 {
-	
-	background-image: url(../img/3.0.png);
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;	
-	border-radius: 40px;
-	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
-	text-align: -webkit-left;
-	padding-top: 6.5%;
-	padding-left: 30%;
-}
-/*==============================
-	Introduction Page
-==============================*/
-.introText-col-1 {
-	/* background-color: blue; */
-	width: 38%;
-	float: left;
-	margin: 0 3%; 
-	font-size: 1.5em;
-}
-.introText-col-2 {
-	/* background-color: blue; */
-	width: 38%;
-	float: left;
-	margin: 0 3%;
-	font-size: 1.5em;
-}
-.intro h1 {
 	
 	background-image: url(../img/2.0.png);
 	background-repeat: no-repeat;
@@ -355,11 +297,39 @@ nav ul li:nth-child(3) a:hover {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	font-size: 1.2em;	
 	text-align: -webkit-left;
 	padding-top: 6.5%;
+	padding-left: 30%;
+	padding-bottom: 6.5%;
+}
+/*==============================
+	Introduction Page
+==============================*/
+.introText-col-1 {
+	width: 40%;
+	float: left;
+	margin: 0 3%; 
+	font-size: 1.5em;
+}
+.introText-col-2 {
+	width: 40%;
+	float: left;
+	margin: 0 3%;
+	font-size: 1.5em;
+}
+.intro h1 {
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 /*==============================
 	About Page
@@ -377,7 +347,7 @@ nav ul li:nth-child(3) a:hover {
 
 .introTextAbout {
 	float:left;
-	width: 25%;
+	width: 80%;
 	margin-left: 3%;
 	font-size: 1.5em;
 }
@@ -409,7 +379,6 @@ nav ul li:nth-child(3) a:hover {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    -webkit-touch-callout: none;
 }
 
 .slides input { display: none;  }
@@ -480,7 +449,6 @@ input:checked + .slide-container .nav label { display: block; }
 	display: block;
 	position: absolute;
 	text-align: center;
-	/* text-anchor: middle; */
 	padding: 0.5em;
 	background-color: rgba(153, 153, 102, 0.69);
 	border-radius: 25px;
@@ -575,7 +543,6 @@ label {
 	font-size: 18px;
 	line-height: 22px;
 	margin-bottom: 10px;
-	/* width:100%; */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -586,7 +553,6 @@ label {
 
 .feedback-input:focus{
 	background: #fff;
-	box-shadow: 0;
 	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
@@ -692,43 +658,34 @@ input:focus, textarea:focus {
 /*==============================
 	Syntax main Page
 ==============================*/
-aside .syntaxSubMenu {
+.syntaxSubMenu ul {
+	display: block;
 	clear: both;
-	float:left;	
-}
-.syntaxSubMenu ul {
 	list-style: none;
+	clear: left;
 }
-.syntaxSubMenu ul {
-	background-size: 100%;	
-	font-weight: bold;
-	font-size: 1.2em;
-	list-style-type: none;
-
-}
-.syntaxSubMenu ul li {
-	background-color: rgba(153, 153, 102, 0.7);
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 10px 2px #888;	
-	clear:both;
-	margin-right: 5%;
-	margin-bottom: 10%;
-	padding: 8% 1%;
-	text-align: center;
-}
-.syntaxSubMenu ul a li {
+.syntaxSubMenu ul li a {
 	text-decoration: none;
+	color: #444;
+	display: block;
+	padding: 10px 20px;
 }
+
 
 .syntaxSubMenu a:hover, 
 .syntaxSubMenu a:active {
     color: white;
-	margin-top: 10px;
+    background-color: rgba(153, 153, 102, 0.7);  
+    border-radius: 5px;  
+    box-shadow: inset 0px 0px 10px 2px #888;  
+    padding: 5px px 0 px;  
+    padding-left: 20px;
 }
 
 
 .syntax h1 {
 	
+	clear: left;
 	background-image: url(../img/2.0.png);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -737,11 +694,11 @@ aside .syntaxSubMenu {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	font-size: 1.2em;	
 	text-align: -webkit-left;
 	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 /*==============================
 	Syntax Selector Page
@@ -756,22 +713,22 @@ aside .syntaxSubMenu {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
-	text-align: -webkit-center;
+	font-size: 1.2em;	
 	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 .selectorText-col-1 {
 	font-size: 1.5em;
-	float: left;
-	width:37%;
-	margin-left: 3%;
+	/* float: left; */
+	width: %;
+	width: 57%;
+	margin-left: 25%;
 }
 .selectorText-col-2 {
 	font-size: 1.5em;
 	float: left;
-	width:37%;
+	width: 74%;
 	margin-left: 3%;
 }
 
@@ -785,14 +742,14 @@ aside .syntaxSubMenu {
 	background-attachment: scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;	
+	background-size: cover;
 	border-radius: 40px;
-	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	box-shadow: 2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;
 	text-align: -webkit-center;
 	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 .decBlock {
 	font-size: 1.5em;
@@ -800,6 +757,7 @@ aside .syntaxSubMenu {
 	margin-left: 3%;
 	width: 50%;
 }
+
 /*==============================
 	Syntax Use Page
 ==============================*/
@@ -813,11 +771,11 @@ aside .syntaxSubMenu {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	font-size: 1.2em;	
 	text-align: -webkit-center;
 	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 .useText-col-1 {
 	font-size: 1.5em;
@@ -850,11 +808,11 @@ aside .syntaxSubMenu {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	font-size: 1.2em;	
 	text-align: -webkit-center;
 	padding-top: 6.5%;
 	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 
 /*==============================
@@ -871,11 +829,11 @@ aside .syntaxSubMenu {
 	background-size: cover;	
 	border-radius: 40px;
 	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
-	font-size: 1.5em;	
-	height: 3em;
+	font-size: 1.2em;	
 	text-align: -webkit-center;
 	padding-top: 6.5%;
 	padding-left: 3%;
+	padding-bottom: 6.5%;
 }
 
 strong {
@@ -984,46 +942,106 @@ tbody:hover tr:hover td {
 /*==============================
 	history Page
 ==============================*/
-aside .historySubMenu {
-	clear: both;
-	float:left;	
-}
-.historySubMenu ul {
-	background-size: 100%;	
-	font-weight: bold;
-	font-size: 1.2em;
-	list-style-type: none;
-	
-}
+
 .historySubMenu ul li {
-	background-color: rgba(153, 153, 102, 0.7);	
-	border-radius: 10px;
-	box-shadow: inset 0px 0px 10px 2px #888;
-	margin-bottom: 10%;
-	padding: 11% 25%;
-	text-align: center;
+	list-style: none;
 }
-.historySubMenu ul a li {
+.historySubMenu ul li a {
 	text-decoration: none;
+	color: #444;
+	display: block;
+	padding: 10px 20px;
 }
+
 
 .historySubMenu a:hover, 
 .historySubMenu a:active {
     color: white;
-	margin-top: 10px;
+    background-color: rgba(153, 153, 102, 0.7);  
+    border-radius: 5px;  
+    box-shadow: inset 0px 0px 10px 2px #888;  
+    padding: 5px px 0 px;  
+    padding-left: 20px;
+}
+
+.history h1 {
+	
+	clear: left;
+	background-image: url(../img/3.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
 }
 
 /*==============================
 	historyEarly Page
 ==============================*/
-
+.historyEarly h1 {
+	
+	clear: left;
+	background-image: url(../img/3.1.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
 /*==============================
 	historyVariations Page
 ==============================*/
-
+.historyVariations h1 {
+	
+	clear: left;
+	background-image: url(../img/3.2.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
 /*==============================
 	browserSupport Page
 ==============================*/
+.browserSupport h1 {
+	
+	clear: left;
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
 .browserSupport-col-1 {
 	float: left;
 	width:42%;
@@ -1038,8 +1056,7 @@ aside .historySubMenu {
 	footer
 ==============================*/
 footer {
-	clear: left;
-	float: left;
+	display: inline-block;
 	margin-left: 1.5%;
 
 }
@@ -1049,7 +1066,7 @@ footer ul {
 
 .helpful a:link,
 .helpful a:visited {
-	color: #fff;
+	color: #555;
 	display: block;
     font-family: "droid-sans";
     float:left;
@@ -1060,8 +1077,6 @@ footer ul {
 	text-decoration: none;	
 	text-transform: lowercase;
 	width: 70px; 
-
-	/*CSS 3*/
 	transition: all .5s;
 	width: 10%;
 }
@@ -1078,10 +1093,6 @@ footer ul {
 	text-decoration: none;	
 	text-transform: uppercase;
 	width: 70px; 
-	 
-	/* padding-left: 30%; */
-	
-	/*CSS 3*/
 	transition: all .5s;
 	width: 10%;
 }
@@ -1099,30 +1110,37 @@ footer a:active {
 /* Codepen Link */
 .helpful ul li:nth-child(1) a:link {
     background: url("../img/spriteMap.png") no-repeat;
-	width: 77px; 
-	height: 56px; 
-	background-position: -439.5px -192px; 	  
+	
+    width: 77px; 
+	
+    height: 56px; 
+	
+    background-position: -430.5px -185px; 	  
 }
 /* github Link */
 .helpful ul li:nth-child(2) a:link {
     background: url("../img/spriteMap.png") no-repeat 0;
-	width: 77px; 
+	
+    width: 77px; 
 	height: 65px; 
-	background-position: -439.5px -62px;
+	
+    background-position: -426.5px -59px;
 }
 /* teamtreehouse Link */
 .helpful ul li:nth-child(3) a:link {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 77px; 
 	height: 65px; 
-	background-position: -439.5px -127px;
+	
+    background-position: -439.5px -123px;
 }
 /* manikoth Link */
 .helpful ul li:nth-child(4) a:link {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 77px; 
 	height: 62px; 
-	background-position: -439.5px -0px;
+	
+    background-position: -439.5px 9px;
 }
 /* fb Link*/
 .social ul li:nth-child(1) a:link {
@@ -1136,7 +1154,8 @@ footer a:active {
     background: url("../img/spriteMap.png") no-repeat 0;
 	width: 57px; 
 	height: 65px; 
-	background-position: -516.5px -62px;
+	
+    background-position: -516.5px -64px;
 }
 /* gplus Link */
 .social ul li:nth-child(3) a:link {
@@ -1152,8 +1171,7 @@ footer a:active {
 @media screen and (min-width: 640px) {
   .grid-1     { width: 13.636363636364%; }
   .grid-2     { width: 20.30303030303%; }
-  .grid-3,
-  .grid-half  { width: 46.969696969697%; }
+  .grid-, .grid-half  { width: 46.969696969697%; }
   .grid-4     { width: 63.636363636364%; }
   .grid-5     { width: 80.30303030303%; }
   .grid-6,
