@@ -183,7 +183,9 @@ nav ul li:nth-child(1) a:hover {
 }
 
 /* Contact Link */
-	nav ul li:nth-child(2) a:link {
+
+nav ul li:nth-child(2) a:link {
+
     background: url("../img/spriteMap.png") no-repeat 0;
 	
     width: 64px; 
@@ -202,7 +204,9 @@ nav ul li:nth-child(2) a:hover {
 
 /* Search Link */
 nav ul li:nth-child(3) a:link {
+
     background-color: rgba(51, 102, 102, 0.09);
+
     background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
@@ -1183,6 +1187,7 @@ footer a:active {
   }
 
 }
+
 /*==============================
 	large screenSize
 ==============================*/
@@ -1246,3 +1251,4 @@ footer a:active {
 		width: 400px;
 	}
 }
+
