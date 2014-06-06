@@ -1,50 +1,34 @@
 /*------------------------------------------------------------
+	Jaime Williams 368-Final I used the following framework
+	which is a combination of the nest site and the attribution below.
 
 	Style.css
-
 	Created by:	Dave Rupert
 	Contact:		http://github.com/davatron5000/foldy960
-
 	Copyright 2012
 	License:	  WTFPL + "Not going to maintain this because
               the rent is too damn high licence."
 
 --------------------------------------------------------------*/
 
-/* Responsive Resets
--------------------------------------------------------------- */
-@-o-viewport {
-  width: device-width;
-}
-@-ms-viewport {
-  width: device-width;
-}
-@viewport {
-  width: device-width;
-}
-
-html {
+.home {
 	overflow-y: auto;
   	background-image: url("../img/paper_1.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 img,
 audio,
-video,
 canvas {
   max-width: 100%;
 }
+ logo a {
+ 	display: inline-block;
+ 	color: #c30;
+ 	text-decoration: none;
+ }
 
-/* Grid > 6 Column Mobile First
--------------------------------------------------------------- */
+/* Grid > 6 Column Mobile First */
 .container {
-  /*
-    The `max-width` property is the width governer. I dare you to experiment
-    with setting this larger, something like 1280px.
-  */
 	max-width: 1280px;
 	width:92%;
 	margin:0px auto;
@@ -64,15 +48,21 @@ canvas {
     font-weight: normal;
     font-style: normal;
 }
-
-
+h1 {
+	font-weight: bold;
+	font-family: "pragmatica-web-condensed";
+	margin:  .5em 0 0 0;
+}
 p {
     font-family: "garamond-premier-pro-caption";
-	line-height: 24px;
+	
+    line-height: 1.2em;
 }
+
 .logo {
  z-index: 1;
 }
+
 /* Headings */
 .about h2,
 .students h2,
@@ -86,30 +76,18 @@ p {
 /*==============================
 	Structure & Layout 
 ==============================*/
-
-
-/* Push down content below navigation */
-article {
-	clear: left;
-	/* background-color: red; */	
-	margin-bottom: 3%;
-	padding-bottom: 2%;
-}
-
-footer {
+aside {
 	clear: left;
 	float: left;
-	display: block;
-	margin-left:3%;
 }
+footer {
 
+}
 .social {
 	float: left;
-	background-color: #c30;
 }
 .helpful {
 	float: left;
-	background-color: #996;
 }
 
 /*==============================
@@ -117,9 +95,10 @@ footer {
 ==============================*/
 
 .logo {
- margin-top: 2%;
- margin-left: 5%;
+ overflow: hidden;
+ margin: 2%;
 }
+
 header  a:hover {
 	margin-bottom:20%;
 }
@@ -150,34 +129,26 @@ nav li:nth-child(1) {
 
 nav {
 	float:right;
-	background: #336666;	
-	border-radius: 10px 0 10px 0;
     height: 64px;
 	position: absolute;
 	left: 0;
 	top: 18%;
 	margin-left: 30%;
 	width: 50%;
-	
-	/* CSS3 */
-	box-shadow: inset 0px 0px 10px 2px #333;
 }
 
 header nav a:link,
 header nav a:visited {
-	color: #fff;
+	color: #555;
+    display: block;
     font-family: "droid-sans";
-	display: block;
+	height: 32px;
 	line-height: 1.5em;
 	text-align: right;	
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 32px; 
-	height: 32px; 
-	/* padding-left: 30%; */
-	
-	/*CSS 3*/
-	transition: all .25s;
+	transition: all .5s;
 	width: 10%;
 }
 
@@ -197,7 +168,7 @@ nav ul li:nth-child(1) a:link {
     width: 64px; 
 	height: 64px; 
 	
-    background-position: -382.5px -0px; 
+    background-position: -388.5px 4px; 
 	  
 }
 
@@ -208,42 +179,53 @@ nav ul li:nth-child(1) a:hover {
 	
     height: 64px; 
 	
-    background-position: -382.5px -64px; 
+    background-position: -388.5px -60px; 
 }
 
 /* Contact Link */
+<<<<<<< HEAD
 nav ul li:nth-child(2) a:link {
+=======
+	nav ul li:nth-child(2) a:link {
+>>>>>>> gh-pages
     background: url("../img/spriteMap.png") no-repeat 0;
 	
     width: 64px; 
 	height: 64px; 
-	background-position: -120px -0px;
+	
+    background-position: -138px 5px;
 }
 
 nav ul li:nth-child(2) a:hover {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px;
-	background-position: -120px -64px;
+	
+    background-position: -138px -60px;
 }
 
 /* Search Link */
 nav ul li:nth-child(3) a:link {
+<<<<<<< HEAD
+=======
+    background-color: rgba(51, 102, 102, 0.09);
+>>>>>>> gh-pages
     background: url("../img/spriteMap.png") no-repeat;
 	
     width: 64px; 
 	
     height: 64px; 
-	background-position: -314.5px -0px;
+	
+    background-position: -330.5px 6px;
 }
 
 nav ul li:nth-child(3) a:hover {
     background: url("../img/spriteMap.png") no-repeat;
 	width: 64px; 
 	height: 64px; 
-	background-position: -314.5px -62px;
+	
+    background-position: -330.5px -60px;
 }
-
 
 /*==============================
 	Navigation: Page Indicators
@@ -255,8 +237,108 @@ nav ul li:nth-child(3) a:hover {
 }
 
 /*==============================
+	index Page
+==============================*/
+/*title*/
+.title {
+	float: left;
+	display: block;
+	font-size: 2em;
+	margin-left: 3%;
+}
+/*contents menu*/
+.contents {
+    float: left;
+    display: block;
+}
+.contents ul {
+	clear: left;
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	list-style-type: none;
+	background-size: 100%;
+}
+.contents ul li {
+	float:left;
+	font-family:"droid-sans";
+	margin-bottom: 2%;
+	text-align: center;
+}
+.contents ul li a {
+	color: #555;
+	text-decoration: none;
+	padding: 5px 20px 5px 20px;
+}
+
+.contents ul a:hover, 
+.contents ul a:active {
+    color: white;
+	margin-top: 10px;
+	
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: #555;  
+    box-shadow: inset 0px 0px 1px 1px #DDD;
+}
+
+/*intro*/
+
+.introText {
+	/* clear: left; */
+	margin: 3%;
+	font-size: 1.5em;
+	float: left;
+	width: 40%;
+}
+.index h1 {
+	
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 30%;
+	padding-bottom: 6.5%;
+}
+/*==============================
+	Introduction Page
+==============================*/
+.introText-col-1 {
+	width: 40%;
+	float: left;
+	margin: 0 3%; 
+	font-size: 1.5em;
+}
+.introText-col-2 {
+	width: 43%;
+	float: left;
+	margin: 0 3%;
+	font-size: 1.5em;
+}
+.intro h1 {
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+/*==============================
 	About Page
 ==============================*/
+
 .about section {
 	float: left;
 	margin-left: 40px;
@@ -267,100 +349,141 @@ nav ul li:nth-child(3) a:hover {
     margin-left: -40px;
 }
 
-/*==============================
-	Students Page
-==============================*/
-.members li {
+.introTextAbout {
+	float:left;
+	margin-left: 3%;
+	font-size: 1.5em;
+}
+.myvid1 {
 	float: left;
-	list-style: none;
-	margin: 20px 0 0 20px;
+	width:60%;
+	margin-left: 5%;
+}
+/*==============================
+	Gallery Theme - Customize
+==============================*/
+
+.slides {
+	float: left;
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    
+	margin-left: 3%;
+	/* margin: 0 auto; */
+    
 	position: relative;
-	width: 440px;
 }
 
-/* Create Ribbons */
-.members h3 {
-    background: #666;
-	bottom: 20px;    
-    color: #fff;
-    font-family: "pragmatica-web-condensed", arial, sans-serif;
-    padding: 10px;
-	position: absolute;
-    	
-	/* CSS 3*/
-	box-shadow: 0 10px 20px #222;
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Alternate Ribbons Left/Right */
-.members li:nth-child(odd) h3 {	
-	left: -20px;
+.slides input { display: none;  }
+
+.slide-container { display: block; float: left; }
+
+.slide {
+	float: left;
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+	margin-left: 0px;
+	transform: scale(0);
+	z-index: 1;
+	transition: all .7s ease-in-out;
 }
 
-.members li:nth-child(even) h3 {
-	right: 0px;
+.slide img {
+    width: 100%;
+    height: 100%;
 }
 
-/* Create Ribbon Triangle */
-.members h3:after {
-	content: "";
-	position: absolute;
+.nav label {
+    width: 15%;
+    height: 100%;
+    /* display: none; */
+    position: absolute;
+	opacity: 0;
+    z-index: 0;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	float: left;
+	width: 25%;
+	bottom: 9px;
+	height: 15px;
 	display: block;
-	border-style: solid;
-	border-color: #333 transparent transparent transparent;
-	bottom: -40px;
-	border-width: 20px;
-	z-index: -1;
+	position: absolute;
+	text-align: center;
+	padding: 0.5em;
+	background-color: rgba(153, 153, 102, 0.69);
+	border-radius: 25px;
+	margin-left: 36%;
+	z-index: 2;
 }
 
-/* Alternate Ribbons Left/Right */
-.members li:nth-child(odd) h3:after {	
-	left: 0;
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-.members li:nth-child(even) h3:after {
-	right: 0px;
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(153, 153, 102, 0.8);
 }
 
-.members img {
-	width: 420px;
-}
-
-/*==============================
-	index Page
-==============================*/
-
-.title {
-	font-size: 2em;
-	margin-left: 3%;
-}
-
-.contents {
-	background-color: green;
-	float: left;
-	margin-left: 3%;
-	margin-top: 3%;
-	width: 45%;	
-}
-
-.introText {
-	background-color: blue;
-	margin: 3% 3%;
-	float: left;
-	width:45%;
-}
-
-.moreContents {
-	background-color: aqua;
-	clear:left;
-	/* float: left; */
-	width:45%;
-	margin: 3% 3%;
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(255, 153, 102, 0.9);
 }
 
 /*==============================
 	Contact Page
 ==============================*/
-
 .contact article section {
 	float: left;
 	margin-left: 10px;
@@ -379,59 +502,684 @@ label {
 	display: block;
 }
 
+/*form*/
+
+#feedback-page{
+	text-align:center;
+}
+
+#text-feedback{
+	background-color:white;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align:center;
+	width: 80%;
+}
+
+#form-main{
+	float:left;
+	padding-top:2%;
+	width:100%;
+}
+
+#form-div {
+	background-color: rgba(84, 164, 219, 1);
+	float: left;
+	margin-left: 25%;
+	margin-bottom: 2%;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	height: 100%;
+	width: 70%;
+}
+
+.feedback-input {
+	box-sizing: border-box;
+	border-radius: 0;
+	background-color: #fbfbfb;
+  	border: 3px solid #fbfbfb;
+	color:#0493bd;	
+	font-family: 'droid-sans', Helvetica, Arial, sans-serif;
+  	font-weight:400;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	opacity:0.9;
+	padding: 13px 13px 13px 54px;
+
+	width: 90%;
+}
+
+.feedback-input:focus{
+	background: #fff;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url("../img/spritemapSmall.png");	 
+	background-size: 64px 196px; 
+	background-position: 0px -5px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url("../img/spritemapSmall.png");	 
+	background-size: 64px 196px; 
+	background-position: 0px -5px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url("../img/spritemapSmall.png");
+	background-size: 64px 192px;
+	background-position: 0px -70px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url("../img/spritemapSmall.png");
+	background-size: 64px 192px;
+	background-position: 0px -70px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url("../img/spritemapSmall.png");
+	background-size: 64px 196px;
+	background-position: 0px -140px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	background-color: rgba(255, 204,153, 1);
+	border: #fbfbfb solid 4px;
+	color: black;
+	cursor:pointer;
+	font-family: 'droid-sans', Helvetica, Arial,  sans-serif;
+	float:left;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+  border-top:3px #3c3c3c solid;
+	width: 0px;
+	height: 76px;
+	
+  background-color: rgba(255,153,102,0.7);
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  background-color:white;  
+  width:100%;
+
+}
+
 /*==============================
-	Gallery Theme - Customize
+	Syntax main Page
+==============================*/
+.syntaxSubMenu ul {
+	display: block;
+	clear: both;
+	list-style: none;
+	clear: left;
+}
+.syntaxSubMenu ul li a {
+	text-decoration: none;
+	color: #444;
+	display: block;
+	padding: 10px 20px;
+}
+
+
+.syntaxSubMenu a:hover, 
+.syntaxSubMenu a:active {
+    color: white;
+    background-color: rgba(102, 153, 204, 0.7);  
+    border-radius: 5px;  
+    box-shadow: inset 0px 0px 10px 2px #eee;  
+    padding: 5px px 0 px;  
+    padding-left: 20px;
+}
+
+
+.syntax h1 {
+	
+	clear: left;
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+/*==============================
+	Syntax Selector Page
+==============================*/
+.synSelector h1 {
+	
+	background-image: url(../img/2.1.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+.selectorText-col-1 {
+	font-size: 1.5em;
+	/* float: left; */
+	width: %;
+	width: 57%;
+	margin-left: 25%;
+}
+.selectorText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width: 74%;
+	margin-left: 3%;
+}
+
+/*==============================
+	Syntax Declaration Block Page
+==============================*/
+.synDecBlock h1 {
+	
+	background-image: url(../img/2.2.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	border-radius: 40px;
+	box-shadow: 2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;
+	text-align: -webkit-center;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+.decBlock {
+	font-size: 1.5em;
+	float: left;
+	margin-left: 3%;
+	width: 50%;
+}
+
+/*==============================
+	Syntax Use Page
+==============================*/
+.synUse h1 {
+	
+	background-image: url(../img/2.3.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-center;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+.useText-col-1 {
+	font-size: 1.5em;
+	float: left;
+	width: 65%;
+	margin-left: 3%;
+}
+.useText-col-2 {
+	font-size: 1.5em;
+	float: left;
+	width:33.3333%;
+	margin-left: 3%;
+}
+.useImage {
+	float: left;
+	width: 39%;
+	margin-left: 3%;
+	margin-top: 3%;
+}
+/*==============================
+	Syntax Sources Page
+==============================*/
+.synSources h1 {
+	
+	background-image: url(../img/2.4.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-center;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+
+/*==============================
+	Syntax Priority Page
 ==============================*/
 
-.gallery .control-button {
-  color: #00ccff;
-  color: rgba(0, 204, 255, 0.4);
+.synPriority h1 {
+	
+	background-image: url(../img/2.5.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-center;
+	padding-top: 6.5%;
+	padding-left: 3%;
+	padding-bottom: 6.5%;
 }
 
-.gallery .control-button:hover {
-   color: #00ccff;
-  color: rgba(0, 204, 255, 1);
+strong {
+	font-weight: bold; 
 }
 
-/*
-	Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
-  position: relative;
+em {
+	font-style: italic; 
 }
-.gallery .item {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-  background: #4d87e2;
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 900px;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#6699cc, #566);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
 }
-.gallery .controls {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
 }
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  transition: color .1s;
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
 }
-@media screen and (min-width: 640px) {
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+
+/*==============================
+	history Page
+==============================*/
+
+.historySubMenu ul li {
+	list-style: none;
+}
+.historySubMenu ul li a {
+	text-decoration: none;
+	color: #444;
+	display: block;
+	padding: 10px 20px;
+}
+
+
+.historySubMenu a:hover, 
+.historySubMenu a:active {
+    color: white;
+    background-color: rgba(102, 153, 204, 0.7);  
+    border-radius: 5px;  
+    box-shadow: inset 0px 0px 10px 2px #eee; 
+    padding: 5px px 0 px;  
+    padding-left: 20px;
+}
+
+.history h1 {
+	
+	clear: left;
+	background-image: url(../img/3.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+
+/*==============================
+	historyEarly Page
+==============================*/
+.historyEarly h1 {
+	
+	clear: left;
+	background-image: url(../img/3.1.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+/*==============================
+	historyVariations Page
+==============================*/
+.historyVariations h1 {
+	
+	clear: left;
+	background-image: url(../img/3.2.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+/*==============================
+	browserSupport Page
+==============================*/
+.browserSupport h1 {
+	
+	clear: left;
+	background-image: url(../img/2.0.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;	
+	border-radius: 40px;
+	box-shadow:  2px 1px 3px 2px rgba(777, 777, 777, .5);
+	font-size: 1.2em;	
+	text-align: -webkit-left;
+	padding-top: 6.5%;
+	padding-left: 35%;
+	padding-bottom: 6.5%;
+}
+.browserSupport-col-1 {
+	float: left;
+	width:42%;
+}
+.browserSupport-col-2 {
+	float: left;
+	width:42%;
+}
+
+
+/*==============================
+	footer
+==============================*/
+footer {
+	display: inline-block;
+	margin-left: 1.5%;
+
+}
+footer ul {
+	list-style: none;
+}
+
+.helpful a:link,
+.helpful a:visited {
+	color: #555;
+	display: block;
+    font-family: "droid-sans";
+    float:left;
+	height: 32px;
+	line-height: 1.5em;
+	margin-left: 12%;
+	text-align: right;
+	text-decoration: none;	
+	text-transform: lowercase;
+	width: 70px; 
+	transition: all .5s;
+	width: 10%;
+}
+.social a:link,
+.social a:visited {
+	color: #fff;
+	display: block;
+    font-family: "droid-sans";
+    float:left;
+	height: 32px;
+	line-height: 1.5em;
+	margin-left: 2%;
+	text-align: right;
+	text-decoration: none;	
+	text-transform: uppercase;
+	width: 70px; 
+	transition: all .5s;
+	width: 10%;
+}
+
+
+footer a:hover, 
+footer a:active {
+    color: #00ccff;
+	margin-top: 10px;
+}
+
+/*==============================
+	footer: Sprite Map
+==============================*/
+/* Codepen Link */
+.helpful ul li:nth-child(1) a:link {
+    background: url("../img/spriteMap.png") no-repeat;
+	
+    width: 77px; 
+	
+    height: 56px; 
+	
+    background-position: -430.5px -185px; 	  
+}
+/* github Link */
+.helpful ul li:nth-child(2) a:link {
+    background: url("../img/spriteMap.png") no-repeat 0;
+	
+    width: 77px; 
+	height: 65px; 
+	
+    background-position: -426.5px -59px;
+}
+/* teamtreehouse Link */
+.helpful ul li:nth-child(3) a:link {
+    background: url("../img/spriteMap.png") no-repeat;
+	width: 77px; 
+	height: 65px; 
+	
+    background-position: -439.5px -123px;
+}
+/* manikoth Link */
+.helpful ul li:nth-child(4) a:link {
+    background: url("../img/spriteMap.png") no-repeat;
+	width: 77px; 
+	height: 62px; 
+	
+    background-position: -439.5px 9px;
+}
+/* fb Link*/
+.social ul li:nth-child(1) a:link {
+    background: url("../img/spriteMap.png") no-repeat;
+	width: 57px; 
+	height: 62px; 
+	background-position: -516.5px -0px; 	  
+}
+/* twitter Link */
+.social ul li:nth-child(2) a:link {
+    background: url("../img/spriteMap.png") no-repeat 0;
+	width: 57px; 
+	height: 65px; 
+	
+    background-position: -516.5px -64px;
+}
+/* gplus Link */
+.social ul li:nth-child(3) a:link {
+    background: url("../img/spriteMap.png") no-repeat;
+	width: 57px; 
+	height: 65px; 
+	background-position: -516.5px -127px;
+}
+
+/*==============================
+	large screenSize
+==============================*/
+@media screen and (min-width: 768px) {
   .grid-1     { width: 13.636363636364%; }
   .grid-2     { width: 20.30303030303%; }
-  .grid-3,
-  .grid-half  { width: 46.969696969697%; }
+  .grid-, .grid-half  { width: 46.969696969697%; }
   .grid-4     { width: 63.636363636364%; }
   .grid-5     { width: 80.30303030303%; }
   .grid-6,
   .grid-full  { width: 96.969696969697%; }
-
-  .gallery .grid-unit {
-    width: 30.30303030303%;
-  }
 
   .content-pad-right {
     padding-right: 4%; /* Use (or don't) as necessary. */
@@ -442,3 +1190,69 @@ label {
   }
 
 }
+<<<<<<< HEAD
+=======
+/*==============================
+	large screenSize
+==============================*/
+@media screen and (max-width: 768px) {
+  .grid-1     { width: 13.636363636364%; }
+  .grid-2     { width: 20.30303030303%; }
+  .grid-, .grid-half  { width: 46.969696969697%; }
+  .grid-4     { width: 63.636363636364%; }
+  .grid-5     { width: 80.30303030303%; }
+  .grid-6,
+  .grid-full  { width: 96.969696969697%; }
+  
+	.content-pad-right {
+	    padding-right: 4%; /* Use (or don't) as necessary. */
+	}
+	.content-pad-left {
+	    padding-left: 4%;
+	}
+	.contents ul li {
+	 	float:none;
+	}
+	.index h1 {
+		background-image:none;
+		border-radius: 0;
+		box-shadow: none;
+		clear: left;
+		font-size: 1.2em;
+		text-align: -webkit-left;
+		padding-top: 6.5%;
+		padding-left: 35%;
+		padding-bottom: 6.5%;
+	}
+	.contents ul {
+		display: block;
+		font-weight: bold;
+		font-size: 1.2em;
+		list-style-type: none;
+		background-size: 100%;
+		margin-top: 150px;
+	}
+
+	header li {
+		float: none;
+	}
+	nav li:nth-child(1) {
+		margin-left: 0;
+	}
+	.logo {
+		min-width: 50%;
+	}
+
+	nav {
+		position: relative;
+	}
+	.slide {
+		height: 100%;
+		width: 100%;
+	}
+	.slides {
+		height: 270px;
+		width: 400px;
+	}
+}
+>>>>>>> gh-pages

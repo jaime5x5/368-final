@@ -10,17 +10,10 @@
 	
 	<link rel="stylesheet" href="css/normalize.css" />	
 	<link rel="stylesheet" href="css/styles.css" />
-<<<<<<< HEAD
 	
 	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
-=======
-
-	<!--<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
-
->>>>>>> gh-pages
 </head>
 <body class="home">
 	
@@ -29,7 +22,7 @@
 			<div class="logo">
 				<a href="index.html" ><img class="logo grid-2"src="img/CSS_logo_1.png"></a>
 			</div>
-			<nav class="grid-4 mainMenu">
+			<nav class="grid-4">
 				<ul>
 				  <li class="grid-2"><a href="about.html">About</a></li>
 				  <li class="grid-2"><a href="contact.html">Contact</a></li>
@@ -39,6 +32,7 @@
 		</header>
     	
     	<article class="grid-6">
+
 			<div class="contents grid-6">
 				<ul>
 				  <li><a href="introduction.html" class="grid-1">Introduction</a></li>
@@ -47,13 +41,31 @@
 				  <li><a href="browserSupport.html" class="grid-2">Browser Support</a></li>
 				</ul>
 			</div>
-			<div class="title grid-4 index">
-				<h1>Cascading Style Sheets (CSS)</h1>
+			<div class="title grid-4 synSelector">
+				<h1>Syntax Selector</h1>
+			</div>
+    		<aside>
+    		<aside class="grid-2">
+				<div class="syntaxSubMenu grid-3">
+					<ul>
+						<li><a href="selector.html">Selector</a></li>
+						<li><a href="declarationBlock.html">Declaration Block</a></li>
+						<li><a href="use.html">Use</a></li>
+						<li><a href="sources.html">Sources</a></li>
+						<li><a href="priority.html">Priority</a></li>
+					</ul>
+				</div>		
+			</aside>
+
+			<div class="selectorText-col-1">
+				<p>   In CSS, selectors are used to declare which part of the markup a style applies to, a kind of match expression. Selectors may apply to: all elements of a specific type, e.g. the second level headers h2 to elements specified by attribute, in particular: id: an identifier unique to the document class to elements depending on how they are placed relative to, or nested within, others in the document tree.
+   				Pseudo-classes are used in CSS selectors to permit formatting based on information that is outside the document tree.</p>
+			</div>
+			<div class="selectorText-col-2">
+				<p> An often-used example of a pseudo-class is :hover, which identifies content only when the user 'points to' the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover. A pseudo-class classifies document elements, such as :link or :visited, whereas a pseudo-element makes a selection that may consist of partial elements, such as :first-line or :first-letter.
+   				Selectors may be combined in many ways, especially in CSS 2.1, to achieve great specificity and flexibility.</p>
 			</div>
 
-    		<div class="introText grid-4">
-				<p>A style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can also be applied to any kind of XML document, including plain XML, SVG and XUL.</p>
-			</div>
 	    </article><!-- end article -->		
 		<footer class="grid-6">
 			<div class="helpful grid-4">

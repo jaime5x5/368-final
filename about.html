@@ -4,56 +4,147 @@
 <head>
 	<meta charset="utf-8" />
 	
-	<title>NESSST : About </title>
+	<title>Cascading Style Sheets: local</title>
 		
 	<link href="favicon.ico" rel="icon" type="image/x-icon" />
-	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<link rel="stylesheet" href="css/normalize.css" />	
 	<link rel="stylesheet" href="css/styles.css" />
 	
-</head>
-<body class="about">
+	<script type="text/javascript" src="//use.typekit.net/ced0xxx.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
-    <div class="container">
-
-<!-- HEADER -->		
-		<header>
-			
-			<h1>
-				<a href="index.html">Nessst</a>
-			</h1>
-		
-			<nav>
+</head>
+<body class="home">
+	
+    <div class="container">		
+		<header class="grid-6">
+			<div class="logo">
+				<a href="index.html" ><img class="logo grid-2"src="img/CSS_logo_1.png"></a>
+			</div>
+			<nav class="grid-4">
 				<ul>
-				  <li><a href="about.html">About</a></li>
-				  <li><a href="students.html">Students</a></li>
-				  <li><a href="contact.html">Contact</a></li>
+				  <li class="grid-2"><a href="about.html">About</a></li>
+				  <li class="grid-2"><a href="contact.html">Contact</a></li>
+				  <li class="grid-2"><a href="http://google.com">Search</a></li>
 				</ul>
 			</nav>		
-
 		</header>
     	
-    	<article>
-			
-			<section>
-				<h2>VcDc</h2>
-				<p>VCDC, aka Visual Communication Design Club, provides a hub for Eastern's student design community in addition to promoting awareness of Eastern, the VCD program and its students to the greater Spokane design industry.</p>
-				
-				<p>Our lounge is located in the back of CEB125. Feel free to stop by and say hello!</p>
-			</section>
-			
-			<section>
-				<h2>Upcoming Events</h2>
-				<p>If you haven't heard about Addys (Design Ad Awards for Students and Professionals), Preflight (Student Portfolio Review by Design Professionals), Red Shoe Event (Fundraising Event/Student Draw-off Opportunity), or Terrain (One night of art, music, and design all under one roof) then you are missing out! These are only a few events that happen every so often but are super important to the Spokane Design Community and we want Eastern students to be more apart of. Head over to the Spokane Ad Fed site here to learn more about Addys, Preflight, and Red Shoe. </p>
-			</section>
-			
-			
-	    </article>		
-    
-    </div><!-- end .container -->	
-    
-	
+    	<article class="grid-6">
+			<div class="title grid-6">
+				<h1>About</h1>
+			</div>
+    		<div class="introTextAbout grid-3">
+				<p>Name: Jaime Williams</p>
+				<p>Class: Senior</p>
+				<p>Major: Computer Information Systems</p>
+				<p>Minor: Visual Communications Design</p>
+			</div>
+			<div>
+			<ul class="slides grid-3">
+			    <input type="radio" name="radio-btn" id="img-1" checked />
+			    <li class="slide-container grid-3">
+					<div class="slide grid-3">
+						<img src="img/redFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-2" />
+			    <li class="slide-container grid-3">
+			        <div class="slide grid-3">
+			          <img src="img/greenFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-3" />
+			    <li class="slide-container grid-3">
+			        <div class="slide grid-3">
+			          <img src="img/blueFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-4" />
+			    <li class="slide-container grid-3">
+			        <div class="slide grid-3">
+			          <img src="img/rgbFW.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-5" />
+			    <li class="slide-container grid-3">
+			        <div class="slide grid-3">
+			          <img src="img/artGecko640.jpg" />
+			        </div>
+					<div class="nav">
+						<label for="img-4" class="prev">&#x2039;</label>
+						<label for="img-6" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <input type="radio" name="radio-btn" id="img-6" />
+			    <li class="slide-container grid-3">
+			        <div id="featured-video" class="slide myvid1">
+        				<iframe width="560" height="315" src="//www.youtube.com/embed/Wao5bNqiWx8" frameborder="0" allowfullscreen></iframe>
+			        </div>
+					<div class="nav">
+						<label for="img-5" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+			    </li>
+
+			    <li class="nav-dots">
+			      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+			      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+			      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+			      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+			      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+			    </li>
+			</ul>
+			</div>
+
+	    </article><!-- end article -->		
+		<footer class="grid-6">
+			<div class="helpful grid-4">
+				<ul>
+				  <li><a href="http://codepen.io/">CODEPEN</a></li>
+				  <li><a href="https://github.com/">GITHUB</a></li>
+				  <li><a href="https://teamtreehouse.com/">TEAMTREEHOUSE</a></li>
+				  <li><a href="http://manikoth.com/desn368">MANIKOTH.COM</a></li>
+				</ul>
+			</div>
+			<div class="social grid-2">
+				<ul>
+				  <li><a href="https://www.facebook.com/"></a></li>
+				  <li><a href="https://twitter.com/"></a></li>
+				  <li><a href="http://www.google.com/+/learnmore/"></a></li>
+				</ul>
+			</div>
+		</footer>
+    </div><!-- end .container -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="jquery.fitvids.js"></script>
+	<script>
+		$("#featured-video").fitVids();
+	</script>
+
 </body>
 </html>
